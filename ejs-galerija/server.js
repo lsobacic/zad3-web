@@ -4,10 +4,8 @@ const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-
-
-
-app.use(express.static('public')); //sve u public dostupno poslužitelju
+app.set('view engine', 'ejs');
+app.use(express.static('public'));
 
 
 app.get('/', (req, res) => {
@@ -33,3 +31,34 @@ app.get('/slike', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server pokrenut na http://localhost:${PORT}`);
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -24,7 +24,7 @@ body {
     transform: scale(1.05);
   }
   
-  /* Lightbox */
+
   .lightbox {
     display: none;
     position: fixed;
